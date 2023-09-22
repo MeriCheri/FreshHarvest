@@ -1,94 +1,150 @@
-.hero{
+.hero {
   padding-top: 64px;
   padding-bottom: 150px;
 }
 
-.hero-title{
-  color: #FFF;
-    text-align: center;
-    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-    font-family: "DM Sans", sans-serif;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 64px;
-    letter-spacing: -2.56px;
-    text-transform: uppercase;
-
-    width: 898px;
+.hero > .container{
+  display: flex;
 }
 
-.hero-img-1{
+.hero-title {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: -2.56px;
+  text-transform: uppercase;
+
+  width: 898px;
+}
+
+.hero-img-1 {
   background-image: url(/img/hero-3.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 1053px;
-    height: 702px;
-    flex-shrink: 0;
+  height: 702px;
 
+  left: 500px;
+  top: 120px;
+  position: absolute;
 }
-.hero-text1{
-  color: #FFF;
-text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px; /* 128.571% */
-letter-spacing: -0.56px;
-width: 222px;
 
+.hero-text1 {
+  margin-top: 408px;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.56px;
+  width: 222px;
 }
-.hero-box1{
+.hero-box1 {
+  padding: 20px 25px 40px;
+  margin-top: 44px;
+
+  text-align: center;
+  display: block;
+}
+
+.hero-box-r {
+  width: 249px;
+  height: 387px;
+  flex-shrink: 0;
+  border-radius: 500px;
+  background: #a4cb66;
+
+  background-repeat: no-repeat;
+}
+
+.hero-box-img-2 {
   background-image: url(/img/hero-4.png);
   width: 200px;
-height: 172px;
-flex-shrink: 0;
-background-repeat: no-repeat;
+  height: 172px;
+  flex-shrink: 0;
+  margin-top: 61px;
 }
-.hero-box{
+
+.hero-box-h3 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: -0.48px;
+}
+.hero-box-text {
+  margin-right: auto;
+    margin-left: auto;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  width: 155px;
+}
+
+.hero-box-l{
+      top: 386px;
+        right: 70px;
+        position: absolute;
   width: 249px;
-height: 387px;
-flex-shrink: 0;
-border-radius: 500px;
-background: #A4CB66;
+    height: 387px;
+    flex-shrink: 0;
+    border-radius: 500px;
+      background: #F5CE13;
+      background-repeat: no-repeat;
+
+
 }
-.hero-box-h3{
-  color: #FFF;
-text-align: center;
-text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 14px; /* 116.667% */
-letter-spacing: -0.48px;
+
+.hero-box-img-3{
+  background-image: url(/img/hero-5.png);
+    width: 200px;
+    height: 172px;
+  margin-top: 19px;
+    background-repeat: no-repeat;
+      background-size: contain;
 }
-.hero-box-text{ 
-  color: #FFF;
-text-align: center;
-text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: 14px; /* 116.667% */
-letter-spacing: -0.48px;
-text-transform: uppercase;
-width: 155px;
+
+.hero-filter{
+  position: absolute;
+  top: 767px;
+    right: 70px;
 }
-.hero-btn{
-color: #FFF;
-text-align: center;
-text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: 14px; /* 116.667% */
-letter-spacing: -0.48px;
-text-transform: uppercase;
-display: inline-flex;
-padding: 12px 32px;
-align-items: flex-start;
-gap: 10px;
-border-radius: 1000px;
-border: 1px solid #FFF;
-background-color:#AE1332;
+.hero-btn {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  display: inline-flex;
+  padding: 12px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 1000px;
+  border: 1px solid #fff;
+  background-color: #ae1332;
 }

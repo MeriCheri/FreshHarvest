@@ -47,7 +47,7 @@ h5,
 h6,
 p,
 ul {
-  margin-top: 0;
+  margin: 0;
 }
 
 :root {
@@ -140,8 +140,16 @@ body {
   padding-bottom: 150px;
 }
 
+.hero > .container {
+  display: flex;
+}
+
 .hero-title {
-  color: #FFF;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 100;
+  color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-family: "DM Sans", sans-serif;
@@ -160,11 +168,16 @@ body {
   background-size: contain;
   width: 1053px;
   height: 702px;
-  flex-shrink: 0;
+  left: 500px;
+  top: 120px;
+  position: absolute;
 }
 
 .hero-text1 {
-  color: #FFF;
+  margin-top: 408px;
+  position: relative;
+  display: inline-block;
+  color: #fff;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   font-style: normal;
@@ -175,23 +188,31 @@ body {
 }
 
 .hero-box1 {
-  background-image: url(/img/hero-4.png);
-  width: 200px;
-  height: 172px;
-  flex-shrink: 0;
-  background-repeat: no-repeat;
+  padding: 20px 25px 40px;
+  margin-top: 44px;
+  text-align: center;
+  display: block;
 }
 
-.hero-box {
+.hero-box-r {
   width: 249px;
   height: 387px;
   flex-shrink: 0;
   border-radius: 500px;
-  background: #A4CB66;
+  background: #a4cb66;
+  background-repeat: no-repeat;
+}
+
+.hero-box-img-2 {
+  background-image: url(/img/hero-4.png);
+  width: 200px;
+  height: 172px;
+  flex-shrink: 0;
+  margin-top: 61px;
 }
 
 .hero-box-h3 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 12px;
@@ -202,7 +223,9 @@ body {
 }
 
 .hero-box-text {
-  color: #FFF;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 12px;
@@ -214,8 +237,35 @@ body {
   width: 155px;
 }
 
+.hero-box-l {
+  top: 386px;
+  right: 70px;
+  position: absolute;
+  width: 249px;
+  height: 387px;
+  flex-shrink: 0;
+  border-radius: 500px;
+  background: #F5CE13;
+  background-repeat: no-repeat;
+}
+
+.hero-box-img-3 {
+  background-image: url(/img/hero-5.png);
+  width: 200px;
+  height: 172px;
+  margin-top: 19px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero-filter {
+  position: absolute;
+  top: 767px;
+  right: 70px;
+}
+
 .hero-btn {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 12px;
@@ -229,6 +279,6 @@ body {
   align-items: flex-start;
   gap: 10px;
   border-radius: 1000px;
-  border: 1px solid #FFF;
-  background-color: #AE1332;
+  border: 1px solid #fff;
+  background-color: #ae1332;
 }/*# sourceMappingURL=style.css.map */
