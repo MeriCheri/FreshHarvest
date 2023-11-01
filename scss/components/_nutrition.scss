@@ -1,0 +1,100 @@
+.nutrition{
+padding: 32px;
+background-color: #ae1332;
+position: relative;
+}
+
+.nutrition > .container{
+    display: flex;
+ 
+  }
+.nutrition-h2{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px; /* 100% */
+    letter-spacing: -2.56px;
+    text-transform: uppercase;
+    width: 740px;
+    position: absolute;
+    right: 230px;
+    top: -30px;
+
+
+}
+
+.nutrition-melon{
+    width: 792px;
+    height: 502px;
+    border-radius: 20px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.nutrition-blueberry{
+    width: 400px;
+    height: 502px;
+    border-radius: 20px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.nutrition-text{
+    color: #FFF;
+
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+    width: 492px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    display: flex;
+}
+
+.form{
+display: flex;
+justify-content: center;
+margin-top: 80px; 
+position: relative;
+}
+
+.input{
+    width: 292px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 100px;
+border: 1px solid #FFF;
+opacity: 0.3;
+color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.56px;
+padding: 24px;
+}
+
+.btn{
+    display: inline-flex;
+    padding: 15px 35px;
+    align-items: center;
+    gap: 15px;
+    border-radius: 100px;
+background: #9DC162;
+border: none;
+color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.56px;
+text-transform: capitalize;
+position: absolute;
+left: 710px;
+
+}
