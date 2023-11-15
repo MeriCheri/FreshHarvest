@@ -1,6 +1,23 @@
 .fruits{
-    padding-bottom: 130px;
+    padding-bottom: 150px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    border-radius: 20px;
+
+    @media screen and (min-width: 375px) {
+   width: 335px;
+height: 476px;
+        
+      }
+      
+      @media screen and (min-width: 768px) {
+        width: 704px;
+        height: 476px;
+      }
+      
+      @media screen and (min-width: 1216px) {
+        width: 860px;
+        height: 476px;
+      }
 }

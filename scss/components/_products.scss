@@ -1,6 +1,19 @@
 .products {
-    padding-bottom: 150px;
-    padding-top: 150px;
+
+    @media screen and (min-width: 375px) {
+      padding-bottom: 80px;
+      padding-top: 80px;
+    }
+    
+    @media screen and (min-width: 768px) {
+      padding-bottom: 144px;
+      padding-top: 144px;
+    }
+    
+    @media screen and (min-width: 1216px) {
+      padding-bottom: 150px;
+      padding-top: 150px;
+    }
 }
 
 .products-h2 {
@@ -14,10 +27,23 @@
   line-height: 44px; /* 110% */
   letter-spacing: -1.6px;
   text-transform: uppercase;
-  width: 624px;
+
   margin-bottom: 14px;
   margin-left: auto;
   margin-right: auto;
+
+  
+  @media screen and (min-width: 375px) {
+width: 210px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    width: 624px;
+  }
+  
+  @media screen and (min-width: 1216px) {
+    width: 624px;
+  }
 }
 
 .products-text1 {
@@ -30,10 +56,24 @@
   font-weight: 400;
   line-height: 18px; /* 128.571% */
   letter-spacing: -0.56px;
-  width: 547px;
+
   margin-bottom: 44px;
   margin-left: auto;
   margin-right: auto;
+
+   
+  @media screen and (min-width: 375px) {
+    width: 547px;
+      }
+      
+      @media screen and (min-width: 768px) {
+        width: 547px;
+      }
+      
+      @media screen and (min-width: 1216px) {
+        width: 334px;
+
+      }
 }
 
 .products-list {
@@ -41,6 +81,20 @@
   flex-wrap: wrap;
   margin-top: -24px;
   margin-left: -24px;
+
+  @media screen and (min-width: 375px) {
+   
+      }
+      
+      @media screen and (min-width: 768px) {
+     
+      }
+      
+      @media screen and (min-width: 1216px) {
+       
+
+      }
+
 }
 
 .products-item {
@@ -48,41 +102,99 @@
   margin-top: 24px;
   margin-left: 24px;
   padding: 64px 47px 24px 24px;
+
+  @media screen and (min-width: 375px) {
+   
+  }
+  
+  @media screen and (min-width: 768px) {
+ 
+  }
+  
+  @media screen and (min-width: 1216px) {
+   
+
+  }
 }
 
 .products-title {
   color: #fff;
-  font-family: DM Sans;
-  font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 38px; /* 118.75% */
-  letter-spacing: -1.28px;
+  /* 118.75% */
+ 
+
+  @media screen and (min-width: 375px) {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.96px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -1.28px;
+  }
+  
+  @media screen and (min-width: 1216px) {
+   
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -1.28px;
+  }
 }
 
 .products-text {
   color: #fff;
-  font-family: DM Sans;
-  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
-  letter-spacing: -0.36px;
+  /* 133.333% */
+
+
+  @media screen and (min-width: 375px) {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+  }
+  
+  @media screen and (min-width: 1216px) {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+  }
 }
 
 .products-button {
   // color: #ae1332;
-  font-family: DM Sans;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 133.333% */
   letter-spacing: -0.72px;
-  padding: 15px 42px;
+
+
   border-radius: 200px;
   background: #fff;
   border: 200px;
   margin: 24px;
+
+  @media screen and (min-width: 375px) {
+   padding: 12px 24px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    padding: 15px 42px;
+  }
+  
+  @media screen and (min-width: 1216px) {
+    padding: 15px 42px;
+  }
 }
 
 .products-fruit {
@@ -90,6 +202,19 @@
   height: 251px;
   flex-shrink: 0;
   margin-left: 47px;
+
+  @media screen and (min-width: 375px) {
+   
+  }
+  
+  @media screen and (min-width: 768px) {
+ 
+  }
+  
+  @media screen and (min-width: 1216px) {
+   
+
+  }
 }
 
 .purchase-item {
@@ -97,10 +222,25 @@
   height: 465px;
   flex-shrink: 0;
   padding: 64px 49px 24px 24px;
+
+  @media screen and (min-width: 375px) {
+   
+  }
+  
+  @media screen and (min-width: 768px) {
+ 
+  }
+  
+  @media screen and (min-width: 1216px) {
+   
+
+  }
 }
 .products-bg1 {
   border-radius: 20px;
   background: #f8766b;
+
+  
 }
 .products-bg2 {
   border-radius: 20px;
