@@ -1,5 +1,4 @@
 .nutrition{
-padding: 32px;
 background-color: #ae1332;
 position: relative;
 }
@@ -12,25 +11,46 @@ position: relative;
     color: #FFF;
     text-align: center;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-    font-size: 64px;
     font-style: normal;
     font-weight: 500;
-    line-height: 64px; /* 100% */
-    letter-spacing: -2.56px;
     text-transform: uppercase;
     width: 740px;
     position: absolute;
     right: 230px;
     top: -30px;
 
+    @media screen and (min-width: 375px) {
+         width: 335px;
+         font-size: 32px;
+line-height: 32px; /* 100% */
+letter-spacing: -1.28px;
 
-}
+
+           }
+           
+           @media screen and (min-width: 768px) {
+width: 648px;
+font-size: 54px;
+line-height: 54px; /* 100% */
+letter-spacing: -2.16px;
+
+           }
+           
+           @media screen and (min-width: 1216px) {
+            width: 740px;
+            font-size: 64px;
+            line-height: 64px; /* 100% */
+            letter-spacing: -2.56px;
+           }
+     }
+
 
 .nutrition-melon{
     width: 792px;
     height: 502px;
     border-radius: 20px;
 background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+
 }
 
 .nutrition-blueberry{
@@ -38,6 +58,7 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     height: 502px;
     border-radius: 20px;
 background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+margin: 24px;
 }
 .nutrition-text{
     color: #FFF;

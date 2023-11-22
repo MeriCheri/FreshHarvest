@@ -71,7 +71,7 @@ width: 210px;
       }
       
       @media screen and (min-width: 1216px) {
-        width: 334px;
+      width: 547px;
 
       }
 }
@@ -98,21 +98,24 @@ width: 210px;
 }
 
 .products-item {
-  flex-basis: calc((100% - 30px * 3) / 3);
+
   margin-top: 24px;
   margin-left: 24px;
   padding: 64px 47px 24px 24px;
 
   @media screen and (min-width: 375px) {
-   
+    flex-basis: calc((100% - 60px)/1);
+    width: 335px;
+    height: 465px;
+    flex-shrink: 0;
   }
   
   @media screen and (min-width: 768px) {
- 
+    flex-basis: calc((100% - 60px)/2);
   }
   
   @media screen and (min-width: 1216px) {
-   
+    flex-basis: calc((100% - 30px * 3) / 3);
 
   }
 }
@@ -171,13 +174,10 @@ width: 210px;
 }
 
 .products-button {
-  // color: #ae1332;
-  font-size: 18px;
+  color: #ae1332;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 133.333% */
-  letter-spacing: -0.72px;
-
+  /* 133.333% */
 
   border-radius: 200px;
   background: #fff;
@@ -186,14 +186,26 @@ width: 210px;
 
   @media screen and (min-width: 375px) {
    padding: 12px 24px;
+   font-size: 14px;
+   line-height: 18px;
+   letter-spacing: -0.56px;
+
   }
   
   @media screen and (min-width: 768px) {
     padding: 15px 42px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+
   }
   
   @media screen and (min-width: 1216px) {
     padding: 15px 42px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+
   }
 }
 
@@ -203,18 +215,18 @@ width: 210px;
   flex-shrink: 0;
   margin-left: 47px;
 
-  @media screen and (min-width: 375px) {
+  // @media screen and (min-width: 375px) {
    
-  }
+  // }
   
-  @media screen and (min-width: 768px) {
+  // @media screen and (min-width: 768px) {
  
-  }
+  // }
   
-  @media screen and (min-width: 1216px) {
+  // @media screen and (min-width: 1216px) {
    
 
-  }
+  // }
 }
 
 .purchase-item {
@@ -250,7 +262,9 @@ width: 210px;
 .products-bg3 {
   border-radius: 20px;
   background: #9dc262;
+
 }
+   
 
 .products-bg4 {
   border-radius: 20px;
@@ -280,7 +294,8 @@ width: 210px;
 .products-bg9 {
   border-radius: 20px;
   background: #98b37e;
-}
+   }
+
 .products-circle{
  width: 114px;
 height: 114px;
@@ -298,7 +313,6 @@ margin-left: auto;
     color: #FFF;
 text-align: center;
 text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-font-family: DM Sans;
 font-size: 18px;
 font-style: normal;
 font-weight: 500;
@@ -306,4 +320,5 @@ line-height: 24px; /* 133.333% */
 letter-spacing: -0.72px;
 text-transform: uppercase;
 margin-left: 36px ;
+
 }
