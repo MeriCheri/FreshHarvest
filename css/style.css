@@ -307,7 +307,7 @@ body {
 }
 
 .purchase {
-  background-color: #AE1332;
+  background-color: #ae1332;
 }
 @media screen and (min-width: 375px) {
   .purchase {
@@ -326,7 +326,7 @@ body {
 }
 
 .purchase-title {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 40px;
@@ -355,19 +355,20 @@ body {
 }
 
 .purchase-text {
-  color: #FFF;
+  color: #fff;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-style: normal;
   font-weight: 400;
-  /* 128.571% */
 }
 @media screen and (min-width: 375px) {
   .purchase-text {
+    text-align: center;
     width: 335px;
+    margin-bottom: 44px;
     font-size: 14px;
-    line-height: 18px; /* 128.571% */
+    font-weight: 400;
+    line-height: 1.28;
     letter-spacing: -0.56px;
-    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -375,6 +376,8 @@ body {
     width: 509px;
     text-align: center;
     margin-bottom: 44px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1216px) {
@@ -390,8 +393,12 @@ body {
   }
 }
 
+.purchase-list {
+  display: flex;
+}
 @media screen and (min-width: 375px) {
   .purchase-list {
+    flex-direction: column;
     gap: 20px;
   }
 }
@@ -405,7 +412,6 @@ body {
 }
 @media screen and (min-width: 1216px) {
   .purchase-list {
-    display: flex;
     gap: 24px;
     flex-direction: row;
     justify-content: center;
@@ -413,9 +419,10 @@ body {
 }
 
 .purchase-list > .item {
+  align-items: center;
   flex-shrink: 0;
   border-radius: 20px;
-  background: #FFF;
+  background: #fff;
   display: flex;
 }
 @media screen and (min-width: 375px) {
@@ -434,19 +441,21 @@ body {
 }
 @media screen and (min-width: 1216px) {
   .purchase-list > .item {
-    width: 335px;
-    height: 112px;
-    padding: 40px 20px;
+    width: 389px;
+    height: 128px;
+    flex-shrink: 0;
   }
 }
 
 .purchase-button {
-  color: #FFF;
+  color: #fff;
   font-style: normal;
   font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: none;
+  border-color: transparent;
   flex-shrink: 0;
   border-radius: 200px;
   cursor: pointer;
@@ -454,19 +463,22 @@ body {
 @media screen and (min-width: 375px) {
   .purchase-button {
     font-size: 18px;
-    line-height: 24px; /* 133.333% */
+    line-height: 1.33;
     letter-spacing: -0.72px;
-    padding: 42px 15px;
+    width: 136px;
+    height: 48px;
     gap: 10px;
   }
 }
 @media screen and (min-width: 1216px) {
   .purchase-button {
-    font-size: 18px;
-    line-height: 24px; /* 133.333% */
-    letter-spacing: -0.72px;
-    padding: 15px 42px;
-    gap: 10px;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
   }
 }
 
@@ -498,19 +510,18 @@ body {
 }
 
 .btn-bg1 {
-  background: #AE1332;
+  background: #ae1332;
 }
 
 .btn-bg2 {
-  background: #A1C864;
+  background: #a1c864;
 }
 
 .btn-bg3 {
-  background: #F5CE13;
+  background: #f5ce13;
 }
 
 .fruits {
-  padding-bottom: 150px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -520,12 +531,14 @@ body {
   .fruits {
     width: 335px;
     height: 476px;
+    object-fit: cover;
   }
 }
 @media screen and (min-width: 768px) {
   .fruits {
     width: 704px;
     height: 476px;
+    object-fit: contain;
   }
 }
 @media screen and (min-width: 1216px) {
@@ -544,7 +557,6 @@ body {
 @media screen and (min-width: 768px) {
   .products {
     padding-bottom: 144px;
-    padding-top: 144px;
   }
 }
 @media screen and (min-width: 1216px) {
@@ -558,11 +570,8 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  font-size: 40px;
   font-style: normal;
   font-weight: 500;
-  line-height: 44px; /* 110% */
-  letter-spacing: -1.6px;
   text-transform: uppercase;
   margin-bottom: 14px;
   margin-left: auto;
@@ -571,11 +580,18 @@ body {
 @media screen and (min-width: 375px) {
   .products-h2 {
     width: 210px;
+    color: #fff;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -1.12px;
   }
 }
 @media screen and (min-width: 768px) {
   .products-h2 {
     width: 624px;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -1.6px;
   }
 }
 @media screen and (min-width: 1216px) {
@@ -588,11 +604,8 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  font-family: DM Sans;
-  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
   letter-spacing: -0.56px;
   margin-bottom: 44px;
   margin-left: auto;
@@ -600,12 +613,17 @@ body {
 }
 @media screen and (min-width: 375px) {
   .products-text1 {
-    width: 547px;
+    width: 334px;
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
 @media screen and (min-width: 768px) {
   .products-text1 {
     width: 547px;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
   }
 }
 @media screen and (min-width: 1216px) {
@@ -617,6 +635,7 @@ body {
 .products-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: -24px;
   margin-left: -24px;
 }
@@ -782,22 +801,67 @@ body {
   border-radius: 20px;
   background: #9b5366;
 }
+@media screen and (min-width: 375px) {
+  .products-bg7 {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products-bg7 {
+    display: block;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .products-bg7 {
+    display: block;
+  }
+}
 
 .products-bg8 {
   border-radius: 20px;
   background: #f47f4c;
+}
+@media screen and (min-width: 375px) {
+  .products-bg8 {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products-bg8 {
+    display: block;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .products-bg8 {
+    display: block;
+  }
 }
 
 .products-bg9 {
   border-radius: 20px;
   background: #98b37e;
 }
+@media screen and (min-width: 375px) {
+  .products-bg9 {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products-bg9 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .products-bg9 {
+    display: block;
+  }
+}
 
 .products-circle {
   width: 114px;
   height: 114px;
   flex-shrink: 0;
-  background-color: #9DC262;
+  background-color: #9dc262;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -808,7 +872,7 @@ body {
 }
 
 .products-text2 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 18px;
@@ -827,26 +891,27 @@ body {
 
 .nutrition > .container {
   display: flex;
+  justify-content: center;
 }
 
 .nutrition-h2 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
-  width: 740px;
   position: absolute;
-  right: 230px;
-  top: -30px;
 }
 @media screen and (min-width: 375px) {
   .nutrition-h2 {
     width: 335px;
-    font-size: 32px;
-    line-height: 32px; /* 100% */
     letter-spacing: -1.28px;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -1.28px;
+    left: 30px;
+    top: -50px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -863,45 +928,112 @@ body {
     font-size: 64px;
     line-height: 64px; /* 100% */
     letter-spacing: -2.56px;
+    top: -80px;
+    left: 250px;
   }
 }
 
 .nutrition-melon {
-  width: 792px;
-  height: 502px;
   border-radius: 20px;
   background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+}
+@media screen and (min-width: 375px) {
+  .nutrition-melon {
+    width: 335px;
+    height: 476px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .nutrition-melon {
+    width: 792px;
+    height: 502px;
+  }
 }
 
 .nutrition-blueberry {
-  width: 400px;
-  height: 502px;
   border-radius: 20px;
   background: url(<path-to-image>), lightgray 50%/cover no-repeat;
-  margin: 24px;
+}
+@media screen and (min-width: 375px) {
+  .nutrition-blueberry {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nutrition-blueberry {
+    display: block;
+    margin-left: 16px;
+    width: 344px;
+    height: 480px;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .nutrition-blueberry {
+    margin-left: 24px;
+    width: 400px;
+    height: 502px;
+  }
 }
 
 .nutrition-text {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
-  letter-spacing: -0.56px;
-  width: 492px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
   display: flex;
+}
+@media screen and (min-width: 375px) {
+  .nutrition-text {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nutrition-text {
+    margin-top: 80px;
+    display: block;
+    width: 492px;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .nutrition-text {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+    width: 492px;
+    margin-top: 80px;
+  }
 }
 
 .form {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
   position: relative;
+}
+@media screen and (min-width: 375px) {
+  .form {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form {
+    display: block;
+    left: 200px;
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .form {
+    display: block;
+    left: 450px;
+    margin-top: 80px;
+  }
 }
 
 .input {
@@ -909,9 +1041,9 @@ body {
   height: 48px;
   flex-shrink: 0;
   border-radius: 100px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   opacity: 0.3;
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -926,9 +1058,9 @@ body {
   align-items: center;
   gap: 15px;
   border-radius: 100px;
-  background: #9DC162;
+  background: #9dc162;
   border: none;
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -936,7 +1068,16 @@ body {
   letter-spacing: -0.56px;
   text-transform: capitalize;
   position: absolute;
-  left: 710px;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    left: 210px;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .btn {
+    left: 210px;
+  }
 }
 
 .footer {
