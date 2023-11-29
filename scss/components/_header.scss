@@ -19,8 +19,21 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.28;
-  letter-spacing: -0.56px;
+
+
+  @media screen and (min-width: 375px) {
+
+  }
+
+  @media screen and (min-width: 768px) {
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+  }
+
+  @media screen and (min-width: 1216px) {
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+  }
 }
 
 .icon-center{
@@ -30,6 +43,18 @@
 .header-icon-1{
   margin-left: 322px;
   fill: var(--menu-link);
+
+  @media screen and (min-width: 375px) {
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 94px;
+  }
+
+  @media screen and (min-width: 1216px) {
+    margin-left: 322px;
+  }
 }
 
 .header-icon-1:hover {
@@ -52,4 +77,23 @@ fill: var(--menu-link);
     line-height: 1.28;
     letter-spacing: -0.56px;
     text-transform: uppercase;
+
+    
+  @media screen and (min-width: 375px) {
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 768px) {
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 1216px) {
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+    text-transform: uppercase;
+  }
 }
